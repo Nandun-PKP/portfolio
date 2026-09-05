@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  background-color: #ffffff;
+  color: #111827;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Subtle dotted texture */
+.bg-dots {
+  background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Optional gentle blob animation */
+@keyframes blob-spin {
+  0% { transform: rotate(0deg) scale(1); }
+  33% { transform: rotate(120deg) scale(1.05); }
+  66% { transform: rotate(240deg) scale(0.95); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.animate-blob {
+  animation: blob-spin 20s infinite linear;
+  transform-origin: center;
+}
